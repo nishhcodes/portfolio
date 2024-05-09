@@ -108,7 +108,7 @@ nav a:hover {
 
 /* Hero page styles starts here */
 #hero-container {
-    background-image: url('/bethel-church-project/assests/yo.jpg');
+    background-image: url('/assests/yo.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
