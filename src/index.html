@@ -11,33 +11,46 @@
     
     <!-- Header container starts here -->
 
-    <nav>
-        <ul class="sidebar">
-            <li onclick=hideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href="#" class="sidebar-text">HOME</a></li>
-            <li><a href="#" class="sidebar-text">FELLOWSHIPS</a></li>
-            <li><a href="#" class="sidebar-text">EVENTS</a></li>
-            <li><a href="#" class="sidebar-text">ABOUT</a></li>
-            <li><a href="#" class="sidebar-text">CONTACT</a></li>
-        </ul>
+    <div id="head-container">
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#" class="sidebar-text">HOME</a></li>
+                <li><a href="#" class="sidebar-text">FELLOWSHIPS</a></li>
+                <li><a href="#" class="sidebar-text">EVENTS</a></li>
+                <li><a href="#" class="sidebar-text">ABOUT</a></li>
+                <li><a href="#" class="sidebar-text">CONTACT</a></li>
+            </ul>
 
-        <ul>
-            <li id="header-title">@BE<span style="color: rgb(205, 62, 62);">T</span>HEL</li>
-            <li class="hideOnMobile"><a href="#">HOME</a></li>
-            <li class="hideOnMobile"><a href="#">FELLOWSHIPS</a></li>
-            <li class="hideOnMobile"><a href="#">EVENTS</a></li>
-            <li class="hideOnMobile"><a href="#">ABOUT</a></li>
-            <li class="hideOnMobile"><a href="#">CONTACT</a></li>
-            <li onclick=showSidebar() id="menu-icon"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        </ul>
-    </nav>
+            <ul>
+                <li id="header-title">@BE<span style="color: rgb(205, 62, 62);">T</span>HEL</li>
+                <li class="hideOnMobile"><a href="#">HOME</a></li>
+                <li class="hideOnMobile"><a href="#">FELLOWSHIPS</a></li>
+                <li class="hideOnMobile"><a href="#">EVENTS</a></li>
+                <li class="hideOnMobile"><a href="#">ABOUT</a></li>
+                <li class="hideOnMobile"><a href="#">CONTACT</a></li>
+                <li onclick=showSidebar() id="menu-icon"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </div>  
 
     <!-- Header container ends here -->
 
     <!-- Hero page starts here -->
     
     <div id="hero-container">
+        <div id="title-box">
+            <h1 id="animated-text">WELCOME TO <span id="bethel-text">BETHEL</span></h1>
+        </div>
+        <div id="welcome-text-container">
+            <p id="welcome-text">
+                "OUR GOAL IS TO AWAKEN HUMANITY TO IT'S INFINITE AND UNIVERSAL LOVE."<br>
+                JOIN TODAY TO CONNECT WITH YOUR HIGHER SOUL.
+            </p>
+        </div>
+        <hr>
 
+        <button id="join-btn">JOIN</button>
     </div>
 
     <!-- Hero page starts here -->
