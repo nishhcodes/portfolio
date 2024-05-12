@@ -5,42 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bethel Church</title>
     <link rel="stylesheet" href="main.css">
-    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     
     <!-- Header container starts here -->
 
-    <div id="head-container">
-        <nav>
-            <ul class="sidebar">
-                <li onclick=hideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                <li><a href="#" class="sidebar-text">HOME</a></li>
-                <li><a href="#" class="sidebar-text">FELLOWSHIPS</a></li>
-                <li><a href="#" class="sidebar-text">EVENTS</a></li>
-                <li><a href="#" class="sidebar-text">ABOUT</a></li>
-                <li><a href="#" class="sidebar-text">CONTACT</a></li>
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="#"><img src="/assests/bethel_logo.png" alt="bethel logo"></a>
+        </div>
+        <div class="background"></div>
+
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li class="nav-link-item dropdown-menu-branch">
+                    <a href="#" data-toggle="dropdown-menu">Ministry<i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="#">Kid's Ministry</a></li>
+                        <li class="dropdown-menu-item"><a href="#">Youth's Ministry</a></li>
+                        <li class="dropdown-menu-item"><a href="#">Mom's Ministry</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-link-item dropdown-menu-branch"><a href="#" data-toggle="dropdown-menu">Events<i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="#">Upcoming Events</a></li>
+                        <li class="dropdown-menu-item"><a href="#">Today's Verse</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-link-item dropdown-menu-branch"><a href="#" data-toggle="dropdown-menu">Resources<i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="#">Media</a></li>
+                        <li class="dropdown-menu-item"><a href="#">Watch/Service</a></li>
+                    </ul>
+                </li>                
+                    
+                <li class="nav-link-item dropdown-menu-branch"><a href="#" data-toggle="dropdown-menu">About<i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="#">Missions</a></li>
+                        <li class="dropdown-menu-item"><a href="#">It's History</a></li>
+                        <li class="dropdown-menu-item"><a href="#">Leadership</a></li>
+                        <li class="dropdown-menu-item"><a href="#">Beliefs</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-link-item dropdown-menu-branch"><a href="#" data-toggle="dropdown-menu">Contact</a></li>
+                <li class="nav-link-item dropdown-menu-branch"><a href="#" data-toggle="dropdown-menu">Location</a></li> 
             </ul>
+        </div>
+        <button id="logout-btn" onclick="hello()">Logout</button>
+    </div>   
+  
+    <!-- Header container starts here -->
 
-            <ul>
-                <li id="header-title">@BE<span style="color: rgb(205, 62, 62);">T</span>HEL</li>
-                <li class="hideOnMobile"><a href="#">HOME</a></li>
-                <li class="hideOnMobile"><a href="#">FELLOWSHIPS</a></li>
-                <li class="hideOnMobile"><a href="#">EVENTS</a></li>
-                <li class="hideOnMobile"><a href="#">ABOUT</a></li>
-                <li class="hideOnMobile"><a href="#">CONTACT</a></li>
-                <li onclick=showSidebar() id="menu-icon"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-            </ul>
-        </nav>
-    </div>  
-
-    <!-- Header container ends here -->
-
-    <!-- Hero page starts here -->
-    
+    <!-- Hero container starts here -->
     <div id="hero-container">
         <div id="title-box">
-            <h1 id="animated-text">WELCOME TO <span id="bethel-text">BETHEL</span></h1>
+            <h1 id="animated-text">BETHEL</h1>
         </div>
         <div id="welcome-text-container">
             <p id="welcome-text">
@@ -52,9 +77,26 @@
 
         <button id="join-btn">JOIN</button>
     </div>
-    <!-- Hero page ends here -->
+    <!-- Hero container ends here -->
 
-    
+    <!-- second container -->
+    <div id="second-container" >
+        <div id="about-us" class="left-reveal">
+            <h1 id="about-us-title">About Us</h1>
+            <hr id="about-us-hr">
+            <p id="about-us-text">
+                "Bethel" holds a significant place in the spiritual journey of many. As a beacon of faith and community, Bethel embodies a sanctuary where hearts find solace, minds seek enlightenment, and souls discover belonging. It's not merely a name; it's a sacred space where individuals come together to celebrate, reflect, and grow in their connection with the divine and each other. Bethel stands as a testament to the enduring power of faith, love, and fellowship, guiding generations toward spiritual fulfillment and collective purpose.
+            </p>
+        </div>
+        <div id="second-container-bg " class="reveal">
+            <img src="/assests/yo.jpg" alt="church picture" id="second-container-img">
+        </div>
+    </div>
+    <!-- second container -->
+
+
     <div id="try"></div>
+
+    <script src="app.js"></script>
 </body>
 </html>
