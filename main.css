@@ -275,17 +275,6 @@ body {
     opacity: 1;
 }
 
-.left-reveal {
-    position: relative;
-    transform: translateX(-150px);
-    transition: all 1s ease;
-    opacity: 0;
-}
-
-.left-reveal.active {
-    transform: translateX(0px);
-    opacity: 1;
-}
 /* second container */
 
 #try {
