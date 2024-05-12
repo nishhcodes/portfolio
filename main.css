@@ -223,8 +223,10 @@ body {
 #second-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 200px;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
 }
 
 #about-us {
@@ -233,23 +235,37 @@ body {
 
 #about-us-title {
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     color: #777;
 }
 
 #about-us-hr {
-    margin-bottom: 80px;
     border: none;
-    background-color: rgb(85, 81, 81);
-    height: 4px;
+    background-color: #777;
+    height: 2px;
 }
 
 #about-us-text {
-    font-size: 18px;
+    font-size: 18pxpx;
     text-align: center;
     font-weight: 300;
-    letter-spacing: 2px;
     color: #777;
+    margin: 20px 0px;
+}
+
+#about-link {
+    padding: 8px 18px;
+    border: none;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#about-link > a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 #second-container-bg {
@@ -257,7 +273,7 @@ body {
 }
 
 #second-container-img {
-    height: 600px;
+    height: 400px;
     width: 600px;
     border-radius: 2rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -265,13 +281,13 @@ body {
 
 .reveal {
     position: relative;
-    transform: translateX(150px);
+    transform: translateY(250px);
     transition: all 1s ease;
     opacity: 0;
 }
 
 .reveal.active {
-    transform: translateX(0px);
+    transform: translateY(0px);
     opacity: 1;
 }
 
