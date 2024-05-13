@@ -143,7 +143,15 @@ body {
     color: #fff;
 }
 
-#logout-btn {
+#sign-in-btn {
+    padding: 8px 18px;
+    border: none;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+#sign-out-btn {
     padding: 8px 18px;
     border: none;
     background-color: black;
